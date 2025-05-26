@@ -62,7 +62,7 @@ public class MessageTest {
             sb.append("a");
         }
         String tooLongMessage = sb.toString();
-        assertTrue(tooLongMessage.length() > 250, "Message exceeds 250 characters by X [enter number here], please reduce size.");
+        assertTrue(tooLongMessage.length() => 250, "Message exceeds 250 characters by X [enter number here], please reduce size.");
     }
 
     // --- Recipient Number Validation Tests ---
