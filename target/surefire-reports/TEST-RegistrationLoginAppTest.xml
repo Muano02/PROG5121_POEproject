@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="RegistrationLoginAppTest" time="0.099" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/test-classes:/home/muano/NetBeansProjects/RegistraionLogInApp/target/classes:/home/muano/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/muano/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/muano/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/muano/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/muano/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/muano/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/muano/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/muano/.m2/repository/org/mockito/mockito-inline/5.2.0/mockito-inline-5.2.0.jar:/home/muano/.m2/repository/org/mockito/mockito-core/5.2.0/mockito-core-5.2.0.jar:/home/muano/.m2/repository/net/bytebuddy/byte-buddy/1.14.1/byte-buddy-1.14.1.jar:/home/muano/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.1/byte-buddy-agent-1.14.1.jar:/home/muano/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="user.country" value="ZA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/home/muano/.sdkman/candidates/java/23-open/lib"/>
+    <property name="sun.java.command" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire/surefirebooter-20250526211724237_3.jar /home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire 2025-05-26T21-17-24_108-jvmRun1 surefire-20250526211724237_1tmp surefire_0-20250526211724237_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/test-classes:/home/muano/NetBeansProjects/RegistraionLogInApp/target/classes:/home/muano/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/muano/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/muano/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/muano/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/muano/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/muano/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/muano/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/muano/.m2/repository/org/mockito/mockito-inline/5.2.0/mockito-inline-5.2.0.jar:/home/muano/.m2/repository/org/mockito/mockito-core/5.2.0/mockito-core-5.2.0.jar:/home/muano/.m2/repository/net/bytebuddy/byte-buddy/1.14.1/byte-buddy-1.14.1.jar:/home/muano/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.1/byte-buddy-agent-1.14.1.jar:/home/muano/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/muano"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-09-17"/>
+    <property name="java.home" value="/home/muano/.sdkman/candidates/java/23-open"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/muano/NetBeansProjects/RegistraionLogInApp"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire/surefirebooter-20250526211724237_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23+37-2369"/>
+    <property name="user.name" value="muano"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.5.0-44-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/snap/netbeans/132/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/muano/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="23"/>
+    <property name="user.dir" value="/home/muano/NetBeansProjects/RegistraionLogInApp"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23+37-2369"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testPhoneNumberCorrectlyFormatted" classname="RegistrationLoginAppTest" time="0.038"/>
+  <testcase name="testPasswordDoesNotMeetComplexity" classname="RegistrationLoginAppTest" time="0.004"/>
+  <testcase name="testLoginSuccess" classname="RegistrationLoginAppTest" time="0.003"/>
+  <testcase name="testLoginFail" classname="RegistrationLoginAppTest" time="0.003"/>
+  <testcase name="testUsernameIncorrectlyFormatted" classname="RegistrationLoginAppTest" time="0.002"/>
+  <testcase name="testPasswordMeetsComplexity" classname="RegistrationLoginAppTest" time="0.003"/>
+  <testcase name="testPhoneNumberIncorrectlyFormatted" classname="RegistrationLoginAppTest" time="0.002"/>
+  <testcase name="testUsernameCorrectlyFormatted" classname="RegistrationLoginAppTest" time="0.001"/>
+</testsuite>
