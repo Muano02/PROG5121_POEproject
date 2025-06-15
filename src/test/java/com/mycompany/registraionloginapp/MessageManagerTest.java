@@ -34,7 +34,7 @@ public class MessageManagerTest {
         manager = new MessageManager();
 
         // 3. Create all the test messages. This fixes "this.msg1" is null, "this.msg2" is null, etc.
-        msg1 = new Message("+27834557896", "Did you get the cake?", "Sent");
+        msg1 = new Message("0834557896", "Did you get the cake?", "Sent");
         Message.incrementSentCount();
 
         msg2 = new Message("+27838884567", "Where are you? You are late! I have asked you to be on time.", "Stored");
