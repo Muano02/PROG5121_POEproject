@@ -84,7 +84,7 @@ public class MessageManagerTest {
 
     @Test
     void testSearchAllMessagesForRecipient() {
-        String recipientToSearch = "+27838884567";
+        String recipientToSearch = "0838884567";
         List<Message> results = manager.searchByRecipient(recipientToSearch);
         assertEquals(2, results.size(), "Search all the messages sent or stored...'");
 
