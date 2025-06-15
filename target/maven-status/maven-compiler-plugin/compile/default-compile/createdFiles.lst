@@ -1,7 +1,8 @@
+com/mycompany/registraionloginapp/MessageManager$1.class
 com/mycompany/registraionloginapp/LoginService.class
-com/mycompany/registraionloginapp/Message$1.class
+com/mycompany/registraionloginapp/MessageManager.class
 com/mycompany/registraionloginapp/User.class
 com/mycompany/registraionloginapp/RegistrationService.class
 com/mycompany/registraionloginapp/RegistraionLogInApp.class
-com/mycompany/registraionloginapp/Message$2.class
 com/mycompany/registraionloginapp/Message.class
+com/mycompany/registraionloginapp/MessageDataTransferObject.class

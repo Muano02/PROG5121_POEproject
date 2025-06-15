@@ -10,11 +10,11 @@ package com.mycompany.registraionloginapp;
  */
 public class User {
 
-    private String firstName;
-    private String lastName;
-    private String username;
-    private String password;
-    private String phoneNumber;
+    private final String firstName;
+    private final String lastName;
+    private final String username;
+    private final String password;
+    private final String phoneNumber;
 
     // Full constructor
     public User(String firstName, String lastName, String username, String password, String phoneNumber) {
