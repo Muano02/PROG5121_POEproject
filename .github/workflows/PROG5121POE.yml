@@ -23,11 +23,14 @@ jobs:
       - name: Build & test with Maven
         run: mvn -B test
 
-      - name: Test Summary
+      - name: Show Test Summary
         if: always()
         uses: test-summary/action@v2
         with:
           paths: "target/surefire-reports/TEST-*.xml"
+          show-failure-details: true         # shows error message of failing tests
+          include-passed: true               # shows passed tests
+          include-skipped: true              # shows skipped tests
 
         
 
