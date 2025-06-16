@@ -50,7 +50,7 @@ public class MessageManager {
         }
     }
 
-    //Processes a Message object, unpacking its data into the correct set of internal parallel arrays based on the message's flag. @param message
+    //Processes a Message object, unpacking its data into the correct set of internal parallel arrays based on the message's flag.
     public void processMessage(Message message) {
         switch (message.getFlag()) {
             case "Sent":

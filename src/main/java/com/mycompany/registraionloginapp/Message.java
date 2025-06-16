@@ -87,7 +87,18 @@ public class Message {
     public boolean checkMessageID() {
         return this.messageID != null && this.messageID.length() == 10;
     }
-
+    
+    //Validates the content of a message string.
+     public static String validateMessageContent(String messageText) {
+        if (messageText == null || messageText.trim().isEmpty()) {
+            return "Message cannot be empty.";
+        }
+        if (messageText.length() > 250) {
+            int excessChars = messageText.length() - 250;
+            return "Message exceeds 250 characters by " + excessChars + ", please reduce size.";
+        }
+        return "Message ready to send.";
+    }
     //Checking cell phone number validation
     public boolean checkRecipientCell() {
         if (this.recipient == null) {
@@ -158,7 +169,6 @@ public class Message {
         StringBuilder sb = new StringBuilder("--- Full Report of Sent Messages ---\n\n");
         for (int i = 0; i < recipients.size(); i++) {
             sb.append("Message Details:\n\n");
-            sb.append("  Message ID: ").append(ids.get(i)).append("\n");
             sb.append("  Message Hash: ").append(hashes.get(i)).append("\n");
             sb.append("  Recipient: ").append(recipients.get(i)).append("\n");
             sb.append("  Message: \"").append(contents.get(i)).append("\"\n");

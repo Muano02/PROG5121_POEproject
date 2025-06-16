@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.registraionloginapp.MessageTest" time="0.126" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.registraionloginapp.MessageTest" time="0.109" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/home/muano/.sdkman/candidates/java/23-open/lib"/>
-    <property name="sun.java.command" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire/surefirebooter-20250615224918129_3.jar /home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire 2025-06-15T22-49-17_951-jvmRun1 surefire-20250615224918129_1tmp surefire_0-20250615224918129_2tmp"/>
+    <property name="sun.java.command" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire/surefirebooter-20250616192843184_3.jar /home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire 2025-06-16T19-28-43_031-jvmRun1 surefire-20250616192843184_1tmp surefire_0-20250616192843184_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.registraionloginapp.MessageTest"/>
     <property name="surefire.test.class.path" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/test-classes:/home/muano/NetBeansProjects/RegistraionLogInApp/target/classes:/home/muano/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/muano/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/muano/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/muano/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/muano/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/muano/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/muano/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/muano/.m2/repository/org/mockito/mockito-inline/5.2.0/mockito-inline-5.2.0.jar:/home/muano/.m2/repository/org/mockito/mockito-core/5.2.0/mockito-core-5.2.0.jar:/home/muano/.m2/repository/net/bytebuddy/byte-buddy/1.14.1/byte-buddy-1.14.1.jar:/home/muano/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.1/byte-buddy-agent-1.14.1.jar:/home/muano/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire/surefirebooter-20250615224918129_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/muano/NetBeansProjects/RegistraionLogInApp/target/surefire/surefirebooter-20250616192843184_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23+37-2369"/>
     <property name="user.name" value="muano"/>
@@ -55,9 +55,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testReturnTotalMessagesSent" classname="com.mycompany.registraionloginapp.MessageTest" time="0.047"/>
-  <testcase name="testRecipientNumberFormat_Success" classname="com.mycompany.registraionloginapp.MessageTest" time="0.023"/>
-  <testcase name="testRecipientNumberFormat_Failure" classname="com.mycompany.registraionloginapp.MessageTest" time="0.005"/>
-  <testcase name="testMessageHashCreation" classname="com.mycompany.registraionloginapp.MessageTest" time="0.006"/>
-  <testcase name="testMessageIDIsCreated" classname="com.mycompany.registraionloginapp.MessageTest" time="0.004"/>
+  <testcase name="testReturnTotalMessagesSent" classname="com.mycompany.registraionloginapp.MessageTest" time="0.043"/>
+  <testcase name="testRecipientNumberFormat_Success" classname="com.mycompany.registraionloginapp.MessageTest" time="0.019"/>
+  <testcase name="testRecipientNumberFormat_Failure" classname="com.mycompany.registraionloginapp.MessageTest" time="0.003"/>
+  <testcase name="testValidateMessageContentLength" classname="com.mycompany.registraionloginapp.MessageTest" time="0.006"/>
+  <testcase name="testMessageHashCreation" classname="com.mycompany.registraionloginapp.MessageTest" time="0.002"/>
+  <testcase name="testMessageIDIsCreated" classname="com.mycompany.registraionloginapp.MessageTest" time="0.003"/>
 </testsuite>
