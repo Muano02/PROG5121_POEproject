@@ -169,6 +169,7 @@ public class Message {
         StringBuilder sb = new StringBuilder("--- Full Report of Sent Messages ---\n\n");
         for (int i = 0; i < recipients.size(); i++) {
             sb.append("Message Details:\n\n");
+            sb.append("  Message ID: ").append(ids.get(i)).append("\n");
             sb.append("  Message Hash: ").append(hashes.get(i)).append("\n");
             sb.append("  Recipient: ").append(recipients.get(i)).append("\n");
             sb.append("  Message: \"").append(contents.get(i)).append("\"\n");
