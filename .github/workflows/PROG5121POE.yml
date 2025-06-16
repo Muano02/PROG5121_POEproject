@@ -20,17 +20,13 @@ jobs:
           java-version: '23'
           distribution: 'temurin'
 
-      - name: Build & test with Maven
+      - name: Run tests with Maven
         run: mvn -B test
 
-      - name: Show Test Summary
+      - name: Publish Test Results
         if: always()
-        uses: test-summary/action@v2
+        uses: dorny/test-reporter@v1
         with:
-          paths: "target/surefire-reports/TEST-*.xml"
-          show-failure-details: true         # shows error message of failing tests
-          include-passed: true               # shows passed tests
-          include-skipped: true              # shows skipped tests
-
-        
-
+          name: JUnit Test Report
+          path: target/surefire-reports/TEST-*.xml
+          reporter: java-junit
