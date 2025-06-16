@@ -86,7 +86,7 @@ public class MessageManagerTest {
     void testSearchAllMessagesForRecipient() {
         String recipientToSearch = "+27838884567";
         List<Message> results = manager.searchByRecipient(recipientToSearch);
-        assertEquals(1, results.size(), "Search all the messages sent or stored...'");
+        assertEquals(2, results.size(), "Search all the messages sent or stored...'");
 
         List<String> foundContents = results.stream().map(Message::getMessageContent).toList();
         assertTrue(foundContents.contains("Where are you? You are late! I have asked you to be on time."), "System must return the first message for the recipient.");
