@@ -27,9 +27,9 @@ public class RegistraionLogInApp {
 
             System.out.println("==================================================================");
             System.out.println("          👋      WELCOME TO THE APP!");
-            System.out.println("=============================================================\n");
+            System.out.println("==================================================================\n");
 
-            System.out.println("🔐===================REGISTRATION==================================\n");
+            System.out.println("🔐===================REGISTRATION===================================\n");
 
             System.out.print("Enter First Name: ");
             String firstName = scanner.nextLine();
@@ -199,11 +199,9 @@ public class RegistraionLogInApp {
         }
     }
 
-    /**
-     * This workflow now returns a String indicating the exact outcome.
-     *
-     * @return "Sent", "Stored", "Disregard", or "Cancelled".
-     */
+    
+    //This workflow returns a String indicating the exact outcome. @return "Sent", "Stored", "Disregard", or "Cancelled".
+  
     private static String sendMessageWorkflow(MessageManager manager) {
         String recipient;
         while (true) {
@@ -229,16 +227,11 @@ public class RegistraionLogInApp {
 
             if (option == JOptionPane.OK_OPTION) {
                 messageText = messageTextArea.getText();
-                if (messageText.length() <= 250) {
-                    if (messageText.trim().isEmpty()) {
-                        JOptionPane.showMessageDialog(null, "Message cannot be empty.", "Input Error", JOptionPane.ERROR_MESSAGE);
-                        messageText = "";
-                    } else {
-                        break;
-                    }
+                String validationResult = Message.validateMessageContent(messageText);
+                if (validationResult.equals("Message ready to send.")) {
+                    break;
                 } else {
-                    int excessChars = messageText.length() - 250;
-                    JOptionPane.showMessageDialog(null, "Message is too long by " + excessChars + " characters. Please shorten it.", "Input Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, validationResult, "Input Error", JOptionPane.ERROR_MESSAGE);
                 }
             } else {
                 return "Cancelled";

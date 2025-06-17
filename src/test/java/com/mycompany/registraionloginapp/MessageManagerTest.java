@@ -82,6 +82,7 @@ public class MessageManagerTest {
         assertEquals("It is dinner time !", result.getMessageContent(), "'Search for messageID'");
     }
 
+
    @Test
     void testSearchByRecipientFindsTheCorrectSentMessage() {
         String recipientToSearch = "+27834557896";

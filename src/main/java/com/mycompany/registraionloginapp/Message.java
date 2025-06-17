@@ -87,7 +87,18 @@ public class Message {
     public boolean checkMessageID() {
         return this.messageID != null && this.messageID.length() == 10;
     }
-
+    
+    //Validates the content of a message string.
+     public static String validateMessageContent(String messageText) {
+        if (messageText == null || messageText.trim().isEmpty()) {
+            return "Message cannot be empty.";
+        }
+        if (messageText.length() > 250) {
+            int excessChars = messageText.length() - 250;
+            return "Message exceeds 250 characters by " + excessChars + ", please reduce size.";
+        }
+        return "Message ready to send.";
+    }
     //Checking cell phone number validation
     public boolean checkRecipientCell() {
         if (this.recipient == null) {
