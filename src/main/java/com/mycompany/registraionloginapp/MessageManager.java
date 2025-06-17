@@ -133,11 +133,6 @@ public class MessageManager {
                 results.add(new Message(sentRecipients.get(i), sentMessagesContent.get(i), "Sent"));
             }
         }
-        for (int i = 0; i < storedRecipients.size(); i++) {
-            if (storedRecipients.get(i).equals(recipientToFind)) {
-                results.add(new Message(storedRecipients.get(i), storedMessagesContent.get(i), "Stored"));
-            }
-        }
         return results;
     }
 
