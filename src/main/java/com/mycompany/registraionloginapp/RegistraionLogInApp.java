@@ -354,7 +354,7 @@ public class RegistraionLogInApp {
                                 //Focused on list of messages for a particular recipient
                                 StringBuilder sb = new StringBuilder("Messages for " + recipientToFind + ":\n\n");
                                 for (Message msg : foundMessages) {
-                                    sb.append("Flag: ").append(msg.getFlag()).append("\n"); // e.g., "Sent" or "Stored"
+                                    sb.append("Flag: ").append(msg.getFlag()).append("\n"); // e.g., "Sent"
                                     sb.append("Message: \"").append(msg.getMessageContent()).append("\"\n");
                                     sb.append("---------------------------------------\n");
                                 }
