@@ -83,14 +83,15 @@ public class MessageManagerTest {
     }
 
     @Test
-    void testSearchOnlySentMessagesForRecipient() {
-        String recipientToSearch = "+27838884567";
-        List<Message> results = manager.searchByRecipient(recipientToSearch);
-        assertEquals(1, results.size(), "Search should only find messages with a 'SENT' status for the recipient");
+    void testSearchByRecipientFindsTheCorrectSentMessage() {
+        String recipientToSearch = "+27834557896";
 
-        List<String> foundContents = results.stream().map(Message::getMessageContent).toList();
-        assertTrue(foundContents.contains("Where are you? You are late! I have asked you to be on time."), "System must return the first message for the recipient.");
-        assertTrue(foundContents.contains("Ok, I am leaving without you."), "System must return the second message for the recipient.");
+        List<Message> results = manager.searchByRecipient(recipientToSearch);
+
+        assertEquals(1, results.size(), "The search should find exactly one sent message for this recipient.");
+        Message foundMessage = results.get(0);
+        assertEquals("Did you get the cake?", foundMessage.getMessageContent(), "The content of the found message is incorrect.");
+        assertEquals("+27834557896", foundMessage.getRecipient(), "The recipient of the found message is incorrect.");
     }
 
     @Test
