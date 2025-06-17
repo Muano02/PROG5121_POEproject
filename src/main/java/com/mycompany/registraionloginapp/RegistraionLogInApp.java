@@ -365,7 +365,7 @@ public class RegistraionLogInApp {
                         }
                         break;
                     case "5":
-                        String hash = JOptionPane.showInputDialog("Enter Message Hash to delete (from Stored messages):");
+                        String hash = JOptionPane.showInputDialog("Enter Message Hash to delete:");
                         if (hash != null && !hash.trim().isEmpty()) {
                             String result = manager.deleteByHash(hash.trim().toUpperCase());
                             JOptionPane.showMessageDialog(null, result, "Deletion Result", JOptionPane.INFORMATION_MESSAGE);
