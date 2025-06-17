@@ -347,7 +347,7 @@ public class RegistraionLogInApp {
                                 //Focused on list of messages for a particular recipient
                                 StringBuilder sb = new StringBuilder("Messages for " + recipientToFind + ":\n\n");
                                 for (Message msg : foundMessages) {
-                                    sb.append("Flag: ").append(msg.getFlag()).append("\n"); // e.g., "Sent" or "Stored"
+                                    sb.append("Flag: ").append(msg.getFlag()).append("\n"); // e.g., "Sent"
                                     sb.append("Message: \"").append(msg.getMessageContent()).append("\"\n");
                                     sb.append("---------------------------------------\n");
                                 }
@@ -358,7 +358,7 @@ public class RegistraionLogInApp {
                         }
                         break;
                     case "5":
-                        String hash = JOptionPane.showInputDialog("Enter Message Hash to delete (from Stored messages):");
+                        String hash = JOptionPane.showInputDialog("Enter Message Hash to delete:");
                         if (hash != null && !hash.trim().isEmpty()) {
                             String result = manager.deleteByHash(hash.trim().toUpperCase());
                             JOptionPane.showMessageDialog(null, result, "Deletion Result", JOptionPane.INFORMATION_MESSAGE);
